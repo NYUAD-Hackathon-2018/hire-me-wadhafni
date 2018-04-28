@@ -1,5 +1,15 @@
 // http://ionicframework.com/docs/theming/
+ion-content {
+    background-image: url('../assets/imgs/bg_pic.png');
+    background-size: cover;
+    background-position: center;
+}
 
+logo-font {
+    font-family: 'Lobster', cursive;
+    font-size: 40pt;
+    color: white;
+}
 
 // App Global Sass
 // --------------------------------------------------
