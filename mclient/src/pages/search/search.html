@@ -7,13 +7,67 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>search</ion-title>
+    <ion-title>Hire a worker</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <p>sup</p>
+    <!-- <ion-card>
+        <ion-card-header>
+          Header
+        </ion-card-header>
+        <ion-card-content>
+          The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+        </ion-card-content>
+      </ion-card> -->
+      <ion-grid>
+          <ion-row>
+            <ion-col col-12><span style="font-size:30pt; color:white; font-family: 'Lobster'; margin-left: 70px;">HireMe</span></ion-col>
+          </ion-row>
+      </ion-grid>
 
+      <p><span style="color: white"><strong>TYPE OF WORK</strong></span></p>
+      <ion-list>
+          <ion-item>
+            <ion-label>Select type</ion-label>
+            <ion-select [(ngModel)]="gaming">
+                <ion-option value="nes">Baking</ion-option>
+                <ion-option value="n64">Plumbing</ion-option>
+                <ion-option value="ps">Carpentry</ion-option>
+            </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <p><span style="color: white"><strong>LANGUAGE</strong></span></p>
+
+      <ion-list>
+          <ion-item>
+            <ion-label>Select language</ion-label>
+            <ion-select [(ngModel)]="gaming">
+                <ion-option value="nes">Arabic</ion-option>
+                <ion-option value="n64">English</ion-option>
+                <ion-option value="n64">French</ion-option>
+            </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <p><span style="color: white"><strong>DiSTANCE</strong></span></p>
+      <ion-item>
+          <ion-range min="0" max="20" [(ngModel)]="structure" color="secondary">
+            <ion-label range-left>0km</ion-label>
+            <ion-label range-right>20km</ion-label>
+          </ion-range>
+        </ion-item>
+
+        <p><span style="color: white"><strong>PRICE RANGE</strong></span></p>
+
+      <ion-item>
+            <ion-range min="0" max="20" [(ngModel)]="saturation" color="secondary">
+              <ion-label range-left>$1</ion-label>
+              <ion-label range-right>$100</ion-label>
+            </ion-range>
+        </ion-item>      
+    
 </ion-content>
