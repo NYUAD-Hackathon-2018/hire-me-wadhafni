@@ -22,11 +22,12 @@
           <img src="../../assets/imgs/cake-example.jpg"/>
           <ion-card-content>
             <ion-card-title>
-              {{ job }}
+              {{ job.name }}
             </ion-card-title>
+            <p> {{ job.skill }}</p>
             <p>Rating</p>
-            <p>Location</p>
-            <p>Language</p>
+            <p> {{ job.loc }} </p>
+            <p> {{ job.language }} </p>
             <p>Price</p>
             <button ion-button icon-left color="danger">
               <ion-icon name="close-circle"></ion-icon>
@@ -34,7 +35,7 @@
               </button>
               <button ion-button icon-left>
                   <ion-icon name="call"></ion-icon>
-                  +2345678456
+                  {{ job.number }}
                 </button>
           </ion-card-content>
         </ion-card>
