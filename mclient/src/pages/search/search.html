@@ -33,9 +33,9 @@
           <ion-item>
             <ion-label>Select type</ion-label>
             <ion-select [(ngModel)]="gaming">
-                <ion-option value="nes">Baking</ion-option>
-                <ion-option value="n64">Plumbing</ion-option>
-                <ion-option value="ps">Carpentry</ion-option>
+                <ion-option value="baking">Baking</ion-option>
+                <ion-option value="plumbing">Plumbing</ion-option>
+                <ion-option value="carpentry">Carpentry</ion-option>
             </ion-select>
         </ion-item>
       </ion-list>
@@ -45,21 +45,27 @@
       <ion-list>
           <ion-item>
             <ion-label>Select language</ion-label>
-            <ion-select [(ngModel)]="gaming">
-                <ion-option value="nes">Arabic</ion-option>
-                <ion-option value="n64">English</ion-option>
-                <ion-option value="n64">French</ion-option>
+            <ion-select [(ngModel)]="gender">
+                <ion-option value="ar">Arabic</ion-option>
+                <ion-option value="en">English</ion-option>
+                <ion-option value="fr">French</ion-option>
             </ion-select>
         </ion-item>
       </ion-list>
 
-      <p><span style="color: white"><strong>DiSTANCE</strong></span></p>
-      <ion-item>
-          <ion-range min="0" max="20" [(ngModel)]="structure" color="secondary">
-            <ion-label range-left>0km</ion-label>
-            <ion-label range-right>20km</ion-label>
-          </ion-range>
+      <p><span style="color: white"><strong>LOCATION</strong></span></p>
+      <ion-list>
+          <ion-item>
+            <ion-label>Select city</ion-label>
+            <ion-select [(ngModel)]="toppings" multiple="true">
+                <ion-option value="casablanca">Casablanca</ion-option>
+                <ion-option value="fez">Fez</ion-option>
+                <ion-option value="marrakesh">Marrakesh</ion-option>
+                <ion-option value="rabat">Rabat</ion-option>
+                <ion-option value="tangier">Tangier</ion-option>
+            </ion-select>
         </ion-item>
+      </ion-list>
 
         <p><span style="color: white"><strong>PRICE RANGE</strong></span></p>
 
@@ -69,5 +75,7 @@
               <ion-label range-right>$100</ion-label>
             </ion-range>
         </ion-item>      
-    
+        <br>
+        <!-- button; needs to send a GET submit to the server -->
+        <button ion-button full [navPush]="ViewJobs">Go</button>
 </ion-content>

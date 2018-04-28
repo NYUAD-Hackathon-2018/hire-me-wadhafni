@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { JobsPage } from '../../pages/jobs/jobs';
 
 /**
- * Generated class for the SearchPage page.
+ * Generated class for the JobsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,18 +10,16 @@ import { JobsPage } from '../../pages/jobs/jobs';
 
 @IonicPage()
 @Component({
-  selector: 'page-search',
-  templateUrl: 'search.html',
+  selector: 'page-jobs',
+  templateUrl: 'jobs.html',
 })
-export class SearchPage {
+export class JobsPage {
 
-  ViewJobs: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.ViewJobs = JobsPage;
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SearchPage');
+    console.log('ionViewDidLoad JobsPage');
   }
 
 }
