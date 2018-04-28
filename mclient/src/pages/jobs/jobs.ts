@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+// import { HttpParams } from '@angular/common/http';
 
 /**
  * Generated class for the JobsPage page.
@@ -20,6 +21,11 @@ export class JobsPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad JobsPage');
+
+    
+    // let params = new HttpParams().set("paramName",paramValue).set("paramName2", paramValue2);
+    // let output = this.http.get(url, {headers: headers, params: params});
+    // console.log(output  );
   }
 
 }

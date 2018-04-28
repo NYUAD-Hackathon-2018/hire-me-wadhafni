@@ -3,8 +3,9 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+// import { HTTP } from '@ionic-native/http';
+
 import { HomePage } from '../pages/home/home';
-import { SearchPage } from '../pages/search/search';
 @Component({
   templateUrl: 'app.html'
 })
