@@ -22,22 +22,32 @@
           <img src="../../assets/imgs/cake-example.jpg"/>
           <ion-card-content>
             <ion-card-title>
-              Razma's Cakes
-              </ion-card-title>
-            <p>
-              Delicious cakes super yay. Delicious cakes super yay. Delicious cakes super yay. Delicious cakes super yay.
-            </p>
+              {{ job.name }}
+            </ion-card-title>
+            <p> {{ job.skill }}</p>
+            <p>Rating</p>
+            <p> {{ job.loc }} </p>
+            <p> {{ job.language }} </p>
+            <p>Price</p>
+            <button ion-button icon-left color="danger">
+              <ion-icon name="close-circle"></ion-icon>
+                Delete
+              </button>
+              <button ion-button icon-left>
+                  <ion-icon name="call"></ion-icon>
+                  {{ job.number }}
+                </button>
           </ion-card-content>
         </ion-card>
   </ion-slide>
 
-  <ion-slide style="background-color: rgba(6, 53, 6, 0.534)">
-    <h2>Slide 2</h2>
+  <!-- <ion-slide style="background-color: rgba(6, 53, 6, 0.534)">
+    <h2> {{lang}} </h2>
   </ion-slide>
 
   <ion-slide style="background-color: rgba(6, 53, 6, 0.534)">
     <h2>Slide 3</h2>
-  </ion-slide>
+  </ion-slide> -->
 
 </ion-slides>
 

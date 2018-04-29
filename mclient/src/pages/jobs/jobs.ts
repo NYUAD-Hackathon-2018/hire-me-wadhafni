@@ -15,11 +15,27 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class JobsPage {
 
+  job;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.job = {};
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad JobsPage');
-  }
+    const request = new XMLHttpRequest();
+    request.open('GET', 'http://13.232.45.142:8080/getWorkers?loc=Dubai&skill=construction&lang=English', true);
+    request.onload = () => {
 
+      console.log('stauts', request.status);
+      console.log("response " + request.responseText);
+      
+      var obj = JSON.parse(request.responseText);
+      this.job = obj;
+      console.log("asd " + this.job.name);
+
+      console.log(obj);
+    };
+    request.send();
+  }
 }
