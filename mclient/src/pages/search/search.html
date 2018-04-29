@@ -1,0 +1,81 @@
+<!--
+  Generated template for the SearchPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Hire a worker</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <!-- <ion-card>
+        <ion-card-header>
+          Header
+        </ion-card-header>
+        <ion-card-content>
+          The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+        </ion-card-content>
+      </ion-card> -->
+      <ion-grid>
+          <ion-row>
+            <ion-col col-12><span style="font-size:30pt; color:white; font-family: 'Lobster'; margin-left: 70px;">HireMe</span></ion-col>
+          </ion-row>
+      </ion-grid>
+
+      <p><span style="color: white"><strong>TYPE OF WORK</strong></span></p>
+      <ion-list>
+          <ion-item>
+            <ion-label>Select type</ion-label>
+            <ion-select [(ngModel)]="gaming">
+                <ion-option value="baking">Baking</ion-option>
+                <ion-option value="plumbing">Plumbing</ion-option>
+                <ion-option value="carpentry">Carpentry</ion-option>
+            </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <p><span style="color: white"><strong>LANGUAGE</strong></span></p>
+
+      <ion-list>
+          <ion-item>
+            <ion-label>Select language</ion-label>
+            <ion-select [(ngModel)]="gender">
+                <ion-option value="ar">Arabic</ion-option>
+                <ion-option value="en">English</ion-option>
+                <ion-option value="fr">French</ion-option>
+            </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <p><span style="color: white"><strong>LOCATION</strong></span></p>
+      <ion-list>
+          <ion-item>
+            <ion-label>Select city</ion-label>
+            <ion-select [(ngModel)]="toppings" multiple="true">
+                <ion-option value="casablanca">Casablanca</ion-option>
+                <ion-option value="fez">Fez</ion-option>
+                <ion-option value="marrakesh">Marrakesh</ion-option>
+                <ion-option value="rabat">Rabat</ion-option>
+                <ion-option value="tangier">Tangier</ion-option>
+            </ion-select>
+        </ion-item>
+      </ion-list>
+
+        <p><span style="color: white"><strong>PRICE RANGE</strong></span></p>
+
+      <ion-item>
+            <ion-range min="0" max="20" [(ngModel)]="saturation" color="secondary">
+              <ion-label range-left>$1</ion-label>
+              <ion-label range-right>$100</ion-label>
+            </ion-range>
+        </ion-item>      
+        <br>
+        <!-- button; needs to send a GET submit to the server -->
+        <button ion-button full [navPush]="ViewJobs">Go</button>
+</ion-content>
